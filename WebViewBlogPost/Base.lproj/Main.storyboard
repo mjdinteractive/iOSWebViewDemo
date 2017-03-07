@@ -22,21 +22,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fs-qG-hcq">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cvU-wd-tem">
+                                        <rect key="frame" x="177" y="291" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cvU-wd-tem" firstAttribute="centerY" secondItem="0fs-qG-hcq" secondAttribute="centerY" id="JNU-dF-HMT"/>
+                                    <constraint firstItem="cvU-wd-tem" firstAttribute="centerX" secondItem="0fs-qG-hcq" secondAttribute="centerX" id="tbY-n6-2Jg"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0fs-qG-hcq" secondAttribute="bottom" id="R1m-ow-Cmd"/>
-                            <constraint firstItem="0fs-qG-hcq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rbn-uf-vyr"/>
                             <constraint firstAttribute="trailing" secondItem="0fs-qG-hcq" secondAttribute="trailing" id="sLp-v9-WtC"/>
+                            <constraint firstItem="0fs-qG-hcq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tI8-2R-gQr"/>
                             <constraint firstItem="0fs-qG-hcq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zZU-P3-2I0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="FIGHT CLUB MEMBERSHIP" id="XKH-Nd-nfx"/>
                     <connections>
                         <outlet property="containerView" destination="0fs-qG-hcq" id="dAB-8W-7g5"/>
+                        <outlet property="spinner" destination="cvU-wd-tem" id="SsB-Qw-Jx6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
